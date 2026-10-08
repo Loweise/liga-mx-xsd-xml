@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elemento Raíz: partido -->
+  <xs:element name="partido">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Permite exactamente 2 elementos equipo (local y visitante) -->
+        <xs:element name="equipo" minOccurs="2" maxOccurs="2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="goles" type="xs:nonNegativeInteger" />
+              <xs:element name="posesion" type="xs:nonNegativeInteger" />
+              <xs:element name="tarjetas" type="xs:nonNegativeInteger" />
+            </xs:sequence>
+            
+            <!-- Atributo nombre -->
+            <xs:attribute name="nombre" type="xs:string" use="required" />
+            
+            <!-- Atributo estadia restringido solo a "local" o "visitante" -->
+            <xs:attribute name="estadia" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="local" />
+                  <xs:enumeration value="visitante" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+
+      <!-- Atributo id del partido (permite enteros positivos o texto) -->
+      <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
