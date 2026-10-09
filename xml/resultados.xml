@@ -3,16 +3,52 @@
          xsi:noNamespaceSchemaLocation="../dtd/resultados.xsd"
          id="1">
 
-    <equipo estadia="local" nombre="Monterrey">
-        <goles>1</goles>
-        <posesion>50</posesion>
-        <tarjetas>0</tarjetas>
+    <equipo estadia="local" nombre="UNAM">
+        <goles>2</goles>
+        <posesion>54</posesion>
+        <tarjetas>1</tarjetas>
     </equipo>
 
-    <equipo estadia="visitante" nombre="Cruz Azul">
-        <goles>0</goles>
-        <posesion>50</posesion>
-        <tarjetas>1</tarjetas> 
+    <equipo estadia="visitante" nombre="San Luis">
+        <goles>3</goles>
+        <posesion>46</posesion>
+        <tarjetas>2</tarjetas> 
+    </equipo>
+
+</partido>
+
+<partido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../dtd/resultados.xsd"
+         id="1">
+
+    <equipo estadia="local" nombre="Leon">
+        <goles>2</goles>
+        <posesion>56</posesion>
+        <tarjetas>2</tarjetas>
+    </equipo>
+
+    <equipo estadia="visitante" nombre="Juarez">
+        <goles>1</goles>
+        <posesion>44</posesion>
+        <tarjetas>2</tarjetas> 
+    </equipo>
+
+</partido>
+
+<partido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../dtd/resultados.xsd"
+         id="1">
+
+    <equipo estadia="local" nombre="Necaxa">
+        <goles>2</goles>
+        <posesion>53</posesion>
+        <tarjetas>3</tarjetas>
+    </equipo>
+
+    <equipo estadia="visitante" nombre="America">
+        <goles>4</goles>
+        <posesion>47</posesion>
+        <tarjetas>2</tarjetas> 
     </equipo>
 
 </partido>
